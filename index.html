@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./estilos.css">
+    <title>LP Desarrollador Web</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/NP/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/lic-nicol%C3%A1s-benjam%C3%ADn-pereira-135a3b149/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/nBenjaminPr"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Nicolas Pereira</span>, Desarrollador Web</h2>
+                <p class="descripcion">Soy Lic en RRHH y actualmente estoy estudiando programciòn full stack deplover usando HTML, CSS, JS Y REACT</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/Nico.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Nicolas Pereira</span> </h2>
+            <h3>PROGRAMDOR FULL STACK</h3>
+            <p>Empece a estudiar progrmacion en el 2021, practicando con videos en youtube usando HTML Y CSS, en el 2022 decidi empezar el curso de programacion full stack en Rolling Code Scholl y hasta la fecha realizamos varios proyectos con HTML, CSS, JS y actualmente estamos desarrolando react y Back-end  </p>
+            <p>Bienvenidos a mi pagina WEB que lo disfruten</p>
+            <a href="https://www.linkedin.com/in/lic-nicol%C3%A1s-benjam%C3%ADn-pereira-135a3b149/">Ir a linkedin</a>
+            
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <p>Desarrollo de paginas webs dinamicas, creativas y entendibles para el publico</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Base de Datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>REACT</li>
+                    <li>Jr.</li>
+                </ul>
+                <p>Armado de la estructura de codigos para almacenar toda la informacion de Frond-end</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Aplicaciones WEB</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>REACT</li>
+                    <li>Jr.</li>
+                </ul>
+                <p>Aplicaciones sensilla de uso cotidiano contando con las herramientas API</p>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Analista en RRHH</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Soft</li>
+                    <li>Hard</li>
+                </ul>
+                <p>Soy analista de rrhh ofreciendo asesoria soft y hard para las empresas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://strong-games-15i.netlify.app/html/login.html"><img src="./img/Rolling-games.png" alt=""></a>
+                <div class="info">
+                    <h4>Pagina WEB de videos juegos</h4>
+                    <p>Diseño Web con HTML, CSS Y JS</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://peaceful-tapioca-1f578f.netlify.app/"><img src="./img/movie-times.png" alt=""></a>
+                <div class="info">
+                    <h4>Pagina WEB de cine</h4>
+                    <p>Diseño Web con HTML y CSS</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://thunderous-froyo-4d8fb4.netlify.app/"><img src="./img/clima app.png" alt=""></a>
+                <div class="info">
+                    <h4>APP del Clima</h4>
+                    <p>Diseño Web con HTML, CSS Y JS</p>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/lic-nicol%C3%A1s-benjam%C3%ADn-pereira-135a3b149/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/nBenjaminPr"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
